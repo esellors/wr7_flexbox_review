@@ -1,0 +1,49 @@
+/*
+    > justify-content always targets the primary axis
+    > align-content always targets the secondary axis
+*/
+
+body {
+    max-width: 100vw;
+    overflow: hidden;
+    /* height: 100vh; */
+    background-color: mediumspringgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-pockets, #right-pockets {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left-pockets {
+    position: relative;
+    /* left: -100px; */
+    right: 100px;
+}
+
+#right-pockets {
+    position: relative;
+    left: 100px;
+}
+
+.top-pockets {
+    position: relative;
+    bottom: 100px;
+}
+
+.bottom-pockets {
+    position: relative;
+    top: 100px;
+}
+
+.pockets {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+}
